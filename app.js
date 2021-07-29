@@ -24,7 +24,7 @@ app.post('/api/books', (req, res) => {
   console.log(newBook);
   allBooks.Books.push(newBook);
 
-  res.send(newBook);
+  res.status(201).send(newBook);
 });
 
 app.delete('/api/books', function (req, res) {
